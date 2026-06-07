@@ -1,0 +1,87 @@
+<!-- LANDING PAGE -->
+<div id="landing" class="landing">
+  <h1>MADE FOR YOUR IMPROVEMENT</h1>
+  <p>GPA Calculator Tool</p>
+  <p>Calculate your GPA instantly — Simple or College version</p>
+
+  <button onclick="startApp()">Start Calculator</button>
+</div>
+
+<!-- APP -->
+<div id="app" style="display:none;">
+
+  <div class="navbar">
+    <div class="logo"> ANGEL'S GPA Calculator</div>
+
+    <div class="nav-links">
+      <a href="#" onclick="showPage('simple')">GPA Calculator</a>
+      <a href="#" onclick="showPage('home')">College GPA Calculator</a>
+    </div>
+  </div>
+
+  <!-- SIMPLE GPA -->
+  <div id="simple" class="page">
+
+    <div class="container">
+      <h1>GPA Calculator</h1>
+
+      <div id="simple-classes">
+        <div class="class">
+          <label>Class 1:</label>
+
+          <select class="simple-grade">
+            <option value="4">A</option>
+            <option value="3">B</option>
+            <option value="2">C</option>
+            <option value="1">D</option>
+            <option value="0">F</option>
+          </select>
+
+          <button class="remove-btn">Remove</button>
+        </div>
+      </div>
+
+      <br>
+
+      <button onclick="addSimpleClass()">Add Class</button>
+      <button onclick="calculateSimpleGPA()">Calculate GPA</button>
+
+      <p id="simple-result"></p>
+    </div>
+
+  </div>
+
+  <!-- COLLEGE GPA -->
+  <div id="home" class="page" style="display:none;">
+
+    <div class="container">
+      <h1>College GPA Calculator</h1>
+
+      <div id="classes">
+        <div class="class">
+          <label>Class 1:</label>
+
+          <select class="grade">
+            <option value="4">A</option>
+            <option value="3">B</option>
+            <option value="2">C</option>
+            <option value="1">D</option>
+            <option value="0">F</option>
+          </select>
+
+          <label>Credits:</label>
+          <input type="number" class="credits" value="3" min="1">
+        </div>
+      </div>
+
+      <br>
+
+      <button onclick="addClass()">Add Class</button>
+      <button onclick="calculateGPA()">Calculate GPA</button>
+
+      <p id="result"></p>
+    </div>
+
+  </div>
+
+</div>
