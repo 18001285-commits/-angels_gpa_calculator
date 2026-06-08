@@ -36,10 +36,13 @@ function addSimpleClass() {
     <button class="remove-btn">Remove</button>
   `;
 
-  newClass.querySelector(".remove-btn").addEventListener("click", function () {
-    newClass.remove();
-  });
+newClass.querySelector(".remove-btn").addEventListener("click", function () {
+  newClass.classList.add("fade-out");
 
+  setTimeout(() => {
+    newClass.remove();
+  }, 300);
+});
   container.appendChild(newClass);
 }
 
