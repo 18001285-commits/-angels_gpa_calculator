@@ -233,4 +233,8 @@ button:active {
 .fade-out {
   opacity: 0;
   transform: translateX(20px);
+}.class-label {
+  display: inline-block;
+  min-width: 80px;
+  font-weight: bold;
 }
