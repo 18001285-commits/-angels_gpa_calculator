@@ -1,44 +1,31 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GPA Calculator</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-
 <!-- LANDING PAGE -->
-<section id="landing" class="landing">
-  <h1>Made for Your Improvement</h1>
+<div id="landing" class="landing">
+  <h1>MADE FOR YOUR IMPROVEMENT</h1>
   <p>GPA Calculator Tool</p>
   <p>Calculate your GPA instantly — Simple or College version</p>
 
   <button onclick="startApp()">Start Calculator</button>
-</section>
+</div>
 
-<!-- APP WRAPPER -->
-<main id="app" style="display:none;">
+<!-- APP -->
+<div id="app" style="display:none;">
 
-  <!-- NAVBAR -->
-  <nav class="navbar">
-    <div class="logo">ANGEL'S GPA CALCULATOR</div>
+  <div class="navbar">
+    <div class="logo"> ANGEL'S GPA Calculator</div>
 
     <div class="nav-links">
-      <a href="#" onclick="showPage('simple')">Simple GPA</a>
-      <a href="#" onclick="showPage('college')">College GPA</a>
+      <a href="#" onclick="showPage('simple')">GPA Calculator</a>
+      <a href="#" onclick="showPage('home')">College GPA Calculator</a>
     </div>
-  </nav>
+  </div>
 
   <!-- SIMPLE GPA -->
-  <section id="simple" class="page">
+  <div id="simple" class="page">
 
     <div class="container">
-      <h1>Simple GPA Calculator</h1>
+      <h1>GPA Calculator</h1>
 
       <div id="simple-classes">
-
         <div class="class">
           <label>Class 1:</label>
 
@@ -52,8 +39,9 @@
 
           <button class="remove-btn">Remove</button>
         </div>
-
       </div>
+
+      <br>
 
       <button onclick="addSimpleClass()">Add Class</button>
       <button onclick="calculateSimpleGPA()">Calculate GPA</button>
@@ -61,16 +49,15 @@
       <p id="simple-result"></p>
     </div>
 
-  </section>
+  </div>
 
   <!-- COLLEGE GPA -->
-  <section id="college" class="page" style="display:none;">
+  <div id="home" class="page" style="display:none;">
 
     <div class="container">
       <h1>College GPA Calculator</h1>
 
       <div id="classes">
-
         <div class="class">
           <label>Class 1:</label>
 
@@ -85,8 +72,9 @@
           <label>Credits:</label>
           <input type="number" class="credits" value="3" min="1">
         </div>
-
       </div>
+
+      <br>
 
       <button onclick="addClass()">Add Class</button>
       <button onclick="calculateGPA()">Calculate GPA</button>
@@ -94,10 +82,6 @@
       <p id="result"></p>
     </div>
 
-  </section>
+  </div>
 
-</main>
-
-<script src="script.js"></script>
-</body>
-</html>
+</div>. 
