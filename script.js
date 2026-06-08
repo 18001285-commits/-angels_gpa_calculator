@@ -120,4 +120,4 @@ function calculateGPA() {
   result.classList.remove("show-result");
   void result.offsetWidth;
   result.classList.add("show-result");
-}.      
+}
