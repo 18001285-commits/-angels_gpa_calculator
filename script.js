@@ -12,7 +12,7 @@ function showPage(page) {
 
 /* ================= SIMPLE GPA ================= */
 
-let simpleCount = 1,2,3,4,5,6,7;
+let classCount++++ = 1,2,3,4,5,6,7;
 
 function classCount++;() {
  classCount++;
