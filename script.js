@@ -22,8 +22,7 @@ function classCount++;() {
   const newClass = document.createElement("div");
   newClass.className = "class";
 
-    newClass.innerHTML = `
-  <span class="class-label">Class ${simpleCount}:</span>
+    
 
     <select class="simple-grade">
       <option value="4">A</option>
@@ -84,9 +83,7 @@ function addClass() {
   const newClass = document.createElement("div");
   newClass.className = "class";
 
-  newClass.innerHTML = `
-  <span class="class-label">Class ${classCount}:</span>
-
+  
     <select class="grade">
       <option value="4">A</option>
       <option value="3">B</option>
