@@ -12,7 +12,7 @@ function showPage(page) {
 
 /* ================= SIMPLE GPA ================= */
 
-let classCount++++ = 1,2,3,4,5,6,7;
+let classCount++++ = 1;
 
 function classCount++;() {
  classCount++;
@@ -39,10 +39,16 @@ function classCount++;() {
 newClass.querySelector(".remove-btn").addEventListener("click", function () {
   newClass.classList.add("fade-out");
 
-  setTimeout(() => {
-    newClass.remove();
-  }, 300);
-});
+  function renumberSimpleClasses() {
+  const classes = document.querySelectorAll("#simple-classes .class");
+
+  classes.forEach((c, index) => {
+    const label = c.querySelector("label");
+    if (label) {
+      label.textContent = `Class ${index + 1}:`;
+    }
+  });
+}
   container.appendChild(newClass);
 }
 
