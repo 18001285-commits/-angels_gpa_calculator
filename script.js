@@ -14,7 +14,7 @@ function showPage(page) {
 
 let simpleCount = 1;
 
-function addSimpleClass() {
+function classCount++;() {
  classCount++;
 
   const container = document.getElementById("simple-classes");
