@@ -41,6 +41,7 @@ function addSimpleClass() {
 
   renumberClasses(); // IMPORTANT
 }
+
 function calculateSimpleGPA() {
   const grades = document.querySelectorAll(".simple-grade");
 
