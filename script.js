@@ -1,6 +1,9 @@
 function startCalculator() {
   document.getElementById("landing").style.display = "none";
   document.getElementById("app").style.display = "block";
+
+  // ✅ SHOW DEFAULT PAGE (IMPORTANT FIX)
+  showPage("simple");
 }
 
 function showPage(page) {
@@ -122,4 +125,4 @@ function calculateGPA() {
 document.addEventListener("DOMContentLoaded", function () {
   document.getElementById("startBtn").addEventListener("click", startCalculator);
 });
-showPage("simple");
+
