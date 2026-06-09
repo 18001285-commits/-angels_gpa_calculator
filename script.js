@@ -122,3 +122,4 @@ function calculateGPA() {
 document.addEventListener("DOMContentLoaded", function () {
   document.getElementById("startBtn").addEventListener("click", startCalculator);
 });
+showPage("simple");
