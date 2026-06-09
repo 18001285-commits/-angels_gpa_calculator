@@ -6,8 +6,11 @@ function startCalculator() {
 }
 
 function showPage(page) {
-  document.getElementById("simple").style.display = "none";
-  document.getElementById("home").style.display = "none";
+  const pages = document.querySelectorAll(".page");
+
+  pages.forEach(p => {
+    p.style.display = "none";
+  });
 
   document.getElementById(page).style.display = "block";
 }
