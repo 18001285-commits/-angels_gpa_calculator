@@ -1,6 +1,5 @@
 function startCalculator() {
   document.getElementById("start-screen").style.display = "none";
-  document.getElementById("gpa-page").style.display = "block";
 }
 
 function showPage(page) {
