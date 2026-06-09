@@ -183,41 +183,6 @@ button:active {
 }
 
 /* ================= BACKGROUND ANIMATION ================= */
-
-@keyframes gradientBG {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
-
-/* ================= SLIDE IN CLASS BOX ================= */
-
-@keyframes slideIn {
-  from {
-    opacity: 0;
-    transform: translateX(-20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-/* ================= PAGE LOAD ================= */
-
-@keyframes pageLoad {
-  from {
-    opacity: 0;
-    transform: translateY(25px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* ================= PAGE SWITCH ================= */
-
 @keyframes pageFade {
   from {
     opacity: 0;
@@ -226,10 +191,16 @@ button:active {
   to {
     opacity: 1;
     transform: translateY(0);
-  }.class {
+  }
+}
+
+/* ================= CLASS ANIMATION ================= */
+
+.class {
   transition: all 0.3s ease;
 }
 
 .fade-out {
   opacity: 0;
   transform: translateX(20px);
+}
