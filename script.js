@@ -12,18 +12,14 @@ function showPage(page) {
 
 /* ================= SIMPLE GPA ================= */
 
-let simpleCount = 1;
-
 function addSimpleClass() {
-  simpleCount++;
-
   const container = document.getElementById("simple-classes");
 
   const newClass = document.createElement("div");
   newClass.className = "class";
 
   newClass.innerHTML = `
-    <label>Class ${simpleCount}:</label>
+    <label></label>
 
     <select class="simple-grade">
       <option value="4">A</option>
@@ -38,11 +34,13 @@ function addSimpleClass() {
 
   newClass.querySelector(".remove-btn").addEventListener("click", function () {
     newClass.remove();
+    renumberClasses(); // IMPORTANT
   });
 
   container.appendChild(newClass);
-}
 
+  renumberClasses(); // IMPORTANT
+}
 function calculateSimpleGPA() {
   const grades = document.querySelectorAll(".simple-grade");
 
