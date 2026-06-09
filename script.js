@@ -1,9 +1,8 @@
 function startCalculator() {
-  document.getElementById("landing").style.display = "none";
-  document.getElementById("app").style.display = "block";
+  console.log("clicked");
 
-  // ✅ SHOW DEFAULT PAGE (IMPORTANT FIX)
-  showPage("simple");
+  document.getElementById("start-screen").style.display = "none";
+  document.getElementById("gpa-page").style.display = "block";
 }
 
 function showPage(page) {
