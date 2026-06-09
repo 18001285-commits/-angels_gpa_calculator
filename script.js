@@ -12,10 +12,10 @@ function showPage(page) {
 
 /* ================= SIMPLE GPA ================= */
 
-let classCount++++ = 1;
+let simpleCount = 1;
 
-function classCount++;() {
- classCount++;
+function addSimpleClass() {
+  simpleCount++;
 
   const container = document.getElementById("simple-classes");
 
@@ -36,19 +36,10 @@ function classCount++;() {
     <button class="remove-btn">Remove</button>
   `;
 
-newClass.querySelector(".remove-btn").addEventListener("click", function () {
-  newClass.classList.add("fade-out");
-
-  function renumberSimpleClasses() {
-  const classes = document.querySelectorAll("#simple-classes .class");
-
-  classes.forEach((c, index) => {
-    const label = c.querySelector("label");
-    if (label) {
-      label.textContent = `Class ${index + 1}:`;
-    }
+  newClass.querySelector(".remove-btn").addEventListener("click", function () {
+    newClass.remove();
   });
-}
+
   container.appendChild(newClass);
 }
 
