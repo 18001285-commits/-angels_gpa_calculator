@@ -19,7 +19,9 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-
+.page {
+  display: none;
+}
   animation: pageLoad 0.8s ease-out;
 }
 
